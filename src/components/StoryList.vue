@@ -1,17 +1,17 @@
 <template>
 <div>
-  <story v-for="story in stories"
-  :image='story.image'
-  :headline='story.headline'
-  :byline='story.byline'
-  :chatter='story.chatter'
-  :key='story.id'/>
+  <story
+  :image='stories[currentStoryIndex].image'
+  :headline='stories[currentStoryIndex].headline'
+  :byline='stories[currentStoryIndex].byline'
+  :chatter='stories[currentStoryIndex].chatter' />
 </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
 import Story from "./Story.vue";
+import stories from "../stories";
 
 export default Vue.extend({
   components: {
@@ -19,23 +19,25 @@ export default Vue.extend({
   },
   data() {
     return {
-      stories: [
-        {
-          image: "https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg",
-          headline: "Story A",
-          byline: "Kia",
-          chatter: "So good",
-          id: Math.random()
-        },
-        {
-          image: "https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg",
-          headline: "Story B",
-          byline: "Other dude",
-          chatter: "So bad",
-          id: Math.random()
-        }
-      ]
+      stories: stories,
+      currentStoryIndex: 0
     };
+  },
+  methods: {
+    incrementStoryIndex: function() {
+      if (this.currentStoryIndex === this.stories.length) {
+        this.currentStoryIndex = 0;
+      } else {
+        this.currentStoryIndex++;
+      }
+    },
+    decrementStoryIndex: function() {
+      if (this.currentStoryIndex === 0) {
+        this.currentStoryIndex = this.stories.length;
+      } else {
+        this.currentStoryIndex--;
+      }
+    }
   }
 });
 </script>
