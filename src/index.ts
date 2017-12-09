@@ -1,13 +1,12 @@
 import Vue from "vue";
+import App from './components/App.vue';
 
-let v = new Vue({
-    el: "#app",
+const v = new Vue({
+    el: "#root",
     template: `
-    <div>
-        <div>Hello {{name}}!</div>
-        Name: <input v-model="name" type="text">
-    </div>`,
-    data: {
-        name: "World"
+        <app></app>
+    `,
+    components: {
+        App
     }
 });
