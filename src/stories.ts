@@ -4,32 +4,33 @@ const stories = [
     {
         image: "http://ww1.hdnux.com/photos/67/32/74/14528268/5/rawImage.jpg",
         headline: "Sutherland Springs mass shooting",
-        chatter: "Sutherland Springs mass shooting: A gunman opens fire during worship services at the First Baptist Church in Sutherland Springs, a small rural community east of San Antonio. He kills 26 people (including an unborn child) and wounds 20. The gunman is then wounded by a local citizen with a semi-automatic rifle, then takes his own life, following a car chase. It is the worst mass shooting in Texas history."
+        chatter: "A gunman opens fire during worship services at the First Baptist Church in Sutherland Springs, a small rural community east of San Antonio. He kills 26 people (including an unborn child) and wounds 20."
     },
     {
         image: "http://ww1.hdnux.com/photos/65/35/20/14013472/11/rawImage.jpg",
         headline: "Hurricane Harvey",
-        chatter: "Harvey smashes into the Corpus Christi area as a Category 4 hurricane, then works its way up the Texas as a tropical storm dropping record amounts of rainfall from Victoria to Beaumont. A rain gauge near Houston recorded 51.88 inches of rain, which set a new record for rainfall from a single tropical storm or hurricane in the continental U.S. More than 1,600 evacuees are processed at San Antonio shelters. The death toll currently stands at 94 and the damage estimate is $190 billion."
+        chatter: "Harvey smashes into the Corpus Christi area as a Category 4 hurricane, then works its way up the Texas as a tropical storm dropping record amounts of rainfall from Victoria to Beaumont."
     },
     {
         image: "http://ww4.hdnux.com/photos/62/54/51/13290079/6/rawImage.jpg",
         headline: "Trailer of Death",
-        chatter: "Responding to call in the early hours of July 23rd, police find 39 undocumented immigrants in a trailer in a Walmart parking lot. Immigrants interviewed by investigators said that anywhere between 70 and 200 people were crammed into the truck. Eight are dead at the scene, two later die of heat-related injuries. The truck driver plead guilty in October and faces up to life in prison."
+        chatter: "Responding to call in the early hours of July 23rd, police find 39 undocumented immigrants in a trailer in a Walmart parking lot. Eight are dead at the scene, two later die of heat-related injuries."
     },
     {
         image: "http://ww2.hdnux.com/photos/60/14/56/12635061/6/rawImage.jpg",
         headline: "Church bus crash",
-        chatter: "Thirteen members of a New Braunfels church are killed in a collision when the oncoming driver crashed his truck head-on into their bus. The 20-year-old truck driver was later indicted on multiple charges alleging intoxication manslaughter, among others. It was also revealed that driver had been texting, which played a role in Gov. Greg Abbott signing a bill into law that banned texting while driving statewide."
+        chatter: "Thirteen members of a New Braunfels church are killed in a collision when the oncoming driver crashed his truck head-on into their bus. The 20-year-old truck driver was later indicted on multiple charges alleging intoxication manslaughter, among others."
     },
     {
         link: 'http://www.expressnews.com/news/local/article/Nirenberg-converted-former-rival-s-supporters-11220989.php',
         image: "http://ww3.hdnux.com/photos/61/74/26/13092270/3/rawImage.jpg",
         headline: "Nirenberg elected mayor",
-        chatter: "Councilman Ron Nirenberg is elected mayor in an increasingly bitter runoff against incumbent Mayor Ivy Taylor. Bexar County Democratic Party Chairman Manuel Medina headed up the mayoral also-rans with a sometimes bizarre campaign."
+        chatter: "Councilman Ron Nirenberg is elected mayor in an increasingly bitter runoff against incumbent Mayor Ivy Taylor."
     },
     {
         link: 'http://www.expressnews.com/business/local/article/BREAKING-Texas-state-Sen-Uresti-turns-himself-11152908.php',
         image: "http://ww1.hdnux.com/photos/61/22/43/12921036/51/rawImage.jpg",
+        headline: 'Uresti arrested',
         chatter: "Texas Sen. Carlos Uresti is arrested in May on 13 counts of bribery and fraud concerning his involvement in a now-defunct San Antonio oil field services company accused of defrauding investors. Three former associates in the company plead guilty to conspiracy charges and are cooperating with the Justice Department's investigation."
     },
     {
