@@ -1,16 +1,12 @@
 <template>
-<div class="story-list">
-  <swipe-container :swipe-forward-func="this.incrementStoryIndex" :swipe-back-func="this.decrementStoryIndex">
-    <div class="story-container">
-    <transition v-bind:name="this.transition">
-      <story :key='currentStoryIndex'
-      :image='stories[currentStoryIndex].image'
-      :headline='stories[currentStoryIndex].headline'
-      :byline='stories[currentStoryIndex].byline'
-      :chatter='stories[currentStoryIndex].chatter' />
-    </transition>
-    </div>
-  </swipe-container>
+  <div class="story-list">
+    <story
+      v-for="(story, index) in stories"
+      :link="story.link"
+      :image="story.image"
+      :headline="story.headline"
+      :chatter="story.chatter"
+      :key="index"/>
 </div>
 </template>
 
@@ -54,55 +50,26 @@ export default Vue.extend({
 </script>
 
 <style>
-.story-list {
-  position: relative;
+@media (max-width: 699px) {
 }
 
-.story-container .story {
-  left: 0;
-  position: absolute;
-  top: 0;
+@media (min-width: 700px) {
+  /* .story-list {
+    margin: 0 auto;
+    width: 96%;
+  } */
+  .story-container .story {
+    left: 2%;
+    margin: 0 auto;
+    width: 96%;
+  }
 }
 
-.forward-enter,
-.back-enter {
-  opacity: 0;
-}
-
-.forward-enter-to,
-.back-enter-to {
-  opacity: 1;
-}
-
-.forward-leave,
-.back-leave {
-  opacity: 1;
-}
-
-.forward-enter-active,
-.back-enter-active {
-  transition: all 0.5s linear;
-}
-
-.forward-leave-active,
-.back-leave-active {
-  transition-property: opacity, transform;
-  transition-duration: 0.5s, 0.8s;
-  transition-timing-function: linear;
-}
-
-.forward-leave-to,
-.back-leave-to {
-  opacity: 0;
-}
-
-.forward-leave-to {
-  transform: rotate(-330deg);
-  transform-origin: top left;
-}
-
-.back-leave-to {
-  transform: rotate(330deg);
-  transform-origin: top left;
+@media (min-width: 1000px) {
+  .story-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
 }
 </style>
