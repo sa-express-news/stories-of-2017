@@ -1,21 +1,34 @@
 <template>
   <header>
     <div class="en-share">
-        <div class="logo">
-            <a href="http://expressnews.com">
-                <img src="https://s3.amazonaws.com/projects.expressnews.com/spurs-nation/img/en-logo-white.svg" alt="San Antonio Express-News">
-            </a>
-        </div>
-        <div class="share">
-            <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//www.expressnews.com/spurs-nation/" title="Share Spurs Nation on Facebook" class="facebook" target="_blank"></a>
-            <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.expressnews.com%2Fspurs-nation%2F&text=Spurs%20Nation&via=expressnews" title="Share Spurs Nation on Twitter" class="twitter" target="_blank"></a>
-            <a href="mailto:?body=Spurs%20Nation%20from%20the%20Express-News&amp;subject=Spurs Nation" title="Share Spurs Nation via email" class="mail"></a>
-        </div>
+      <div class="logo">
+        <a href="/">
+          <img
+            src="https://s3.amazonaws.com/projects.expressnews.com/spurs-nation/img/en-logo-white.svg"
+            alt="San Antonio Express-News">
+        </a>
+      </div>
+      <div class="share">
+        <a
+          href="https://www.facebook.com/sharer/sharer.php?u=http%3A//www.expressnews.com/stories-of-2017/"
+          title="Share the stories of 2017 on Facebook"
+          class="facebook"
+          target="_blank"/>
+        <a
+          href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.expressnews.com%2Fstories-of-2017%2F&text=The%20stories%20of%202017&via=expressnews"
+          title="Share the stories of 2017 on Twitter"
+          class="twitter"
+          target="_blank"/>
+        <a
+          href="mailto:?body=The%20stories%20of%202017%2C%20from%20the%20San%20Antonio%20Express-News&amp;subject=The stories of 2017"
+          title="Share the stories of 2017 via email"
+          class="mail"/>
+      </div>
     </div>
-  <div class="title">
-  <h2>The stories of 2017</h2>
-  <p>Here is some chatter that not the developer should write. A couple sentences will do.</p>
-  </div>
+    <div class="title">
+      <h2>The stories of 2017</h2>
+      <p>Here is some chatter that not the developer should write. A couple sentences will do.</p>
+    </div>
   </header>
 </template>
 
@@ -121,6 +134,12 @@ header .logo {
 }
 
 header .title {
-  margin-left: 0.75em;
+  margin: 0 auto;
+  width: 96%;
+}
+
+header h2 {
+  letter-spacing: normal;
+  text-transform: none;
 }
 </style>
