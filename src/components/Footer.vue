@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <span class="logo"></span>
+    <span class="logo"/>
     <ul>
         <li>
             <a href="http://www.hearst.com/newspapers/san-antonio-express-news">Our Company</a>
@@ -21,13 +21,13 @@
             <a href="http://www.hearstmediasa.com/">Advertising</a>
         </li>
         <li>
-            <a href="http://www.expressnews.com/privacy_policy/">Privacy Policy</a>
+            <a href="/privacy_policy/">Privacy Policy</a>
         </li>
         <li>
-            <a href="http://www.expressnews.com/privacy_policy#your_rights">Your Privacy Rights</a>
+            <a href="/privacy_policy#your_rights">Your Privacy Rights</a>
         </li>
         <li>
-            <a href="http://www.expressnews.com/privacy_policy/#caprivacyrights">Your California Privacy Rights</a>
+            <a href="/privacy_policy/#caprivacyrights">Your California Privacy Rights</a>
         </li>
         <li>
             <span>© 2017 Hearst Corporation</span>

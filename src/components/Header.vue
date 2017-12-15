@@ -27,7 +27,7 @@
     </div>
     <div class="title">
       <h2>The stories of 2017</h2>
-      <p>Here is some chatter that not the developer should write. A couple sentences will do.</p>
+      <p>By the San Antonio Express-News</p>
     </div>
   </header>
 </template>
@@ -69,10 +69,7 @@ header .logo {
   background: #111;
   min-height: 40px;
 }
-.en-share .logo {
-  -ms-flex-preferred-size: 40%;
-  flex-basis: 40%;
-}
+
 .en-share .logo img {
   width: 78%;
   padding-left: 0.5em;
@@ -86,8 +83,6 @@ header .logo {
   -webkit-box-direction: normal;
   -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
-  -ms-flex-preferred-size: 60%;
-  flex-basis: 60%;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -130,16 +125,32 @@ header .logo {
   background-position: -176px 0;
 }
 .title p {
-  font-size: 18px;
+  font-size: 17px;
+  font-style: italic;
+  margin-top: 0.75em;
 }
 
 header .title {
-  margin: 0 auto;
+  margin: 0.75em auto;
   width: 96%;
 }
 
 header h2 {
   letter-spacing: normal;
   text-transform: none;
+  font-size: 30px;
+}
+
+@media (min-width: 1000px) {
+  header .title {
+    text-align: center;
+  }
+  header h2 {
+    font-size: 45px;
+  }
+
+  .title p {
+    font-size: 19px;
+  }
 }
 </style>

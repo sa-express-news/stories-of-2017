@@ -94,7 +94,9 @@ export default Vue.extend({
     padding-top: 2%;
     width: 50%;
   }
+}
 
+@media (max-width: 999px) {
   .story-container {
     margin: 4% 0;
   }
@@ -102,7 +104,12 @@ export default Vue.extend({
 
 @media (min-width: 1000px) {
   .story-container {
-    flex-basis: 45%;
+    flex-basis: 48%;
+    padding: 0.75em 0;
+  }
+
+  .info {
+    margin-top: 0.75em;
   }
 }
 </style>
