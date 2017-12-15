@@ -26,8 +26,8 @@
       </div>
     </div>
     <div class="title">
-      <h2>The stories of 2017</h2>
-      <p>By the San Antonio Express-News</p>
+      <h2>Best stories of 2017</h2>
+      <p>The San Antonio Express-News’ best journalism as chosen by our newsroom and ranked in descending order.</p>
     </div>
   </header>
 </template>
